@@ -38,7 +38,9 @@ struct RootView: View {
             .navigationDestination(for: NavigationManager.RouteItem.self) { route in
                 switch route {
                 case .Fruit(let fruit):
-                    DisplayView(item: fruit).environmentObject(nav)
+                    DisplayView(item: fruit)
+                        .environmentObject(nav)
+                        .id(fruit)
 //                    FruitView(fruit: fruit)
 //                        .id(fruit)
 //                        .environmentObject(nav)
