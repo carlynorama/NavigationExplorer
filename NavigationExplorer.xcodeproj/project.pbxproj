@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA35911A28E79B81004F23D4 /* NavigationExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35911928E79B81004F23D4 /* NavigationExplorerApp.swift */; };
-		DA35911C28E79B81004F23D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35911B28E79B81004F23D4 /* ContentView.swift */; };
+		DA35911C28E79B81004F23D4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35911B28E79B81004F23D4 /* RootView.swift */; };
 		DA35911E28E79B83004F23D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA35911D28E79B83004F23D4 /* Assets.xcassets */; };
 		DA35912228E79B83004F23D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA35912128E79B83004F23D4 /* Preview Assets.xcassets */; };
 		DA35912928E79B91004F23D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA35912828E79B91004F23D4 /* README.md */; };
@@ -23,7 +23,7 @@
 /* Begin PBXFileReference section */
 		DA35911628E79B81004F23D4 /* NavigationExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA35911928E79B81004F23D4 /* NavigationExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExplorerApp.swift; sourceTree = "<group>"; };
-		DA35911B28E79B81004F23D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA35911B28E79B81004F23D4 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		DA35911D28E79B83004F23D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA35911F28E79B83004F23D4 /* NavigationExplorer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavigationExplorer.entitlements; sourceTree = "<group>"; };
 		DA35912128E79B83004F23D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 				DA35913028E7B3B7004F23D4 /* DetailView.swift */,
 				DA35912C28E79F65004F23D4 /* NavigationManager.swift */,
 				DA35913228E7B862004F23D4 /* StoreExampleView.swift */,
-				DA35911B28E79B81004F23D4 /* ContentView.swift */,
+				DA35911B28E79B81004F23D4 /* RootView.swift */,
 				DA35911D28E79B83004F23D4 /* Assets.xcassets */,
 				DA35911F28E79B83004F23D4 /* NavigationExplorer.entitlements */,
 				DA35912028E79B83004F23D4 /* Preview Content */,
@@ -164,7 +164,7 @@
 				DA35912B28E79BA2004F23D4 /* Fruit.swift in Sources */,
 				DA35913128E7B3B7004F23D4 /* DetailView.swift in Sources */,
 				DA35912D28E79F65004F23D4 /* NavigationManager.swift in Sources */,
-				DA35911C28E79B81004F23D4 /* ContentView.swift in Sources */,
+				DA35911C28E79B81004F23D4 /* RootView.swift in Sources */,
 				DA35913328E7B862004F23D4 /* StoreExampleView.swift in Sources */,
 				DA35912F28E7B27D004F23D4 /* Vehicle.swift in Sources */,
 				DA35911A28E79B81004F23D4 /* NavigationExplorerApp.swift in Sources */,
