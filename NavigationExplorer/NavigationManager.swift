@@ -14,6 +14,15 @@ class NavigationManager: ObservableObject {
     enum RouteItem: Hashable {
         case Fruit(Fruit)
         case Vehicle(Vehicle)
+        
+        var name:String {
+            switch self {
+            case .Fruit(let fruit):
+                return fruit.name
+            case .Vehicle(let vehicle):
+                return vehicle.name
+            }
+        }
     }
     
     @Published var visibilityStack : [RouteItem] = []

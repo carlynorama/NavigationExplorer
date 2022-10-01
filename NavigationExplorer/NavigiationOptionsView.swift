@@ -14,48 +14,61 @@ struct NavigationOptionsView: View {
     var body: some View {
         VStack {
             Spacer()
-            Text("Fruit")
-            HStack(spacing: 10) {
-                Text("Swap View")
-                ForEach(Fruit.fruitList) { item in
-                    Button(item.name) {
-                        counter += 1
-                        navigation.swapView(.Fruit(item))
+            Group {
+                Text("Fruit")
+                HStack() {
+                    Text("Swap View")
+                    ForEach(Fruit.fruitList) { item in
+                        Button(item.name) {
+                            counter += 1
+                            navigation.swapView(.Fruit(item))
+                        }
                     }
                 }
-            }
-            
-            HStack(spacing: 10) {
-                Text("Load New Item View")
-                ForEach(Fruit.fruitList) { item in
-                    Button(item.name) {
-                        counter += 1
-                        navigation.loadView(.Fruit(item))
-                    }
-                }
-            }
-            Spacer()
-            Text("Vehicles")
-            HStack(spacing: 10) {
-                Text("Swap View")
-                ForEach(Vehicle.vehicleList) { item in
-                    Button(item.name) {
-                        counter += 1
-                        navigation.swapView(.Vehicle(item))
-                    }
-                }
-            }
-            
-            HStack(spacing: 10) {
-                Text("Load New Item View")
-                ForEach(Vehicle.vehicleList) { item in
-                    Button(item.name) {
-                        counter += 1
-                        navigation.loadView(.Vehicle(item))
+                
+                HStack() {
+                    Text("Load New Item View")
+                    ForEach(Fruit.fruitList) { item in
+                        Button(item.name) {
+                            counter += 1
+                            navigation.loadView(.Fruit(item))
+                        }
                     }
                 }
             }
             Spacer()
+            Group {
+                Text("Vehicles")
+                HStack() {
+                    Text("Swap View")
+                    ForEach(Vehicle.vehicleList) { item in
+                        Button(item.name) {
+                            counter += 1
+                            navigation.swapView(.Vehicle(item))
+                        }
+                    }
+                }
+                
+                HStack() {
+                    Text("Load New Item View")
+                    ForEach(Vehicle.vehicleList) { item in
+                        Button(item.name) {
+                            counter += 1
+                            navigation.loadView(.Vehicle(item))
+                        }
+                    }
+                }
+                
+            }
+            Spacer()
+            HStack() {
+                Text("Who is in the visibility stack")
+                ForEach(navigation.visibilityStack, id: \.self) { item in
+                    Text(item.name)
+                }
+            }
+            Spacer()
+            
         }.environmentObject(navigation)
         
     }

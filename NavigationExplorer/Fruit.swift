@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 
-struct Fruit : Hashable, Identifiable{
+struct Fruit : Hashable, Identifiable, Displayable{
     static let fruitList = [Fruit(name: "Banana"), Fruit(name: "Strawberry"), Fruit(name: "Pineapple")]
     
     var id: String
@@ -41,8 +41,6 @@ struct FruitView: View {
     @EnvironmentObject var navigation: NavigationManager
     var fruit: Fruit
     
-    //@Environment(\.self) var env
-    
     var body: some View {
         
         VStack {
@@ -54,26 +52,11 @@ struct FruitView: View {
             NavigationOptionsView(counter: $counter).environmentObject(navigation)
             
             
-//            HStack(spacing:10) {
-//                Text("Who is in the visibility stack")
-//                ForEach(fruitViewController.visibilityStack, id: \.self) { fruit as any Displayable in
-//                    Text(fruit.id)
-//                }
-//
-//            }
-            
         }.onDisappear() {
             print("Fruit view \(fruit.id) is gone")
         }.onAppear() {
             print("Hi I'm \(fruit.id), I'm new here.")
-            //dump(env)
         }
-        
-        //        }.onReceive(fruitViewController.$visibilityStack) { value in
-        //            counter = 0
-        //            showMoreText = false
-        //
-        //        }
         
     }
 }

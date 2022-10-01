@@ -18,7 +18,7 @@ struct RootView: View {
     var body: some View {
         NavigationStack(path: $nav.visibilityStack) {
             VStack {
-                Button("Pile Banana and Strawberry", action: bananaAndStrawberry)
+                Button("Jump to Strawberry through Banana", action: bananaAndStrawberry)
                     .padding(40)
                 Button("Push Hello") { helloNewItem.toggle() }
                     .padding(40)
@@ -29,22 +29,25 @@ struct RootView: View {
                 }
             }
             .onAppear() {
-                print("appeared")
+                print("RootView Appeared")
             }
+            // Original call for when there was just fruit.
             //            .navigationDestination(for: Fruit.self) {
             //                fruit in FruitView(fruit: fruit).environmentObject(fruitController)
             //            }
             .navigationDestination(for: NavigationManager.RouteItem.self) { route in
                 switch route {
                 case .Fruit(let fruit):
-                    FruitView(fruit: fruit)
-                        .id(fruit)
-                        .environmentObject(nav)
+                    DisplayView(item: fruit).environmentObject(nav)
+//                    FruitView(fruit: fruit)
+//                        .id(fruit)
+//                        .environmentObject(nav)
                     
                 case .Vehicle(let vehicle):
-                    VehicleView(vehicle: vehicle).environmentObject(nav)
+                    DisplayView(item: vehicle).environmentObject(nav)
+//                    VehicleView(vehicle: vehicle).environmentObject(nav)
                 }
-            }.navigationDestination(isPresented: $helloNewItem, destination: { Text("Hello") })
+            }.navigationDestination(isPresented: $helloNewItem, destination: { HelloThereView().environmentObject(nav) })
         }
     }
     
@@ -52,6 +55,7 @@ struct RootView: View {
         nav.bananaAndStrawberry()
     }
 }
+
 
 
 struct ContentView_Previews: PreviewProvider {

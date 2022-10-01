@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 
-struct Vehicle:Hashable, Identifiable {
+struct Vehicle:Hashable, Identifiable, Displayable {
     static let vehicleList = [Vehicle(name: "Bicycle"), Vehicle(name: "Scooter"), Vehicle(name: "Bus")]
     
     var id: String
@@ -39,8 +39,6 @@ struct VehicleView: View {
     @EnvironmentObject var navigation: NavigationManager
     var vehicle: Vehicle
     
-    //@Environment(\.self) var env
-    
     var body: some View {
         
         VStack {
@@ -52,27 +50,12 @@ struct VehicleView: View {
             NavigationOptionsView(counter: $counter).environmentObject(navigation)
             
             
-//            HStack(spacing:10) {
-//                Text("Who is in the visibility stack")
-//                ForEach(fruitViewController.visibilityStack, id: \.self) { fruit as any Displayable in
-//                    Text(fruit.id)
-//                }
-//
-//            }
-            
         }.onDisappear() {
             print("Vehicle view \(vehicle.id) is gone")
         }.onAppear() {
             print("Hi I'm \(vehicle.id), I'm new here.")
-            //dump(env)
         }
-        
-        //        }.onReceive(fruitViewController.$visibilityStack) { value in
-        //            counter = 0
-        //            showMoreText = false
-        //
-        //        }
-        
+       
     }
 }
 
