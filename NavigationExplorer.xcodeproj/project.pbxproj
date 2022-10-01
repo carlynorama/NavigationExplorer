@@ -11,6 +11,13 @@
 		DA35911C28E79B81004F23D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35911B28E79B81004F23D4 /* ContentView.swift */; };
 		DA35911E28E79B83004F23D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA35911D28E79B83004F23D4 /* Assets.xcassets */; };
 		DA35912228E79B83004F23D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA35912128E79B83004F23D4 /* Preview Assets.xcassets */; };
+		DA35912928E79B91004F23D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA35912828E79B91004F23D4 /* README.md */; };
+		DA35912B28E79BA2004F23D4 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35912A28E79BA2004F23D4 /* Fruit.swift */; };
+		DA35912D28E79F65004F23D4 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35912C28E79F65004F23D4 /* NavigationManager.swift */; };
+		DA35912F28E7B27D004F23D4 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35912E28E7B27D004F23D4 /* Vehicle.swift */; };
+		DA35913128E7B3B7004F23D4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35913028E7B3B7004F23D4 /* DetailView.swift */; };
+		DA35913328E7B862004F23D4 /* StoreExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35913228E7B862004F23D4 /* StoreExampleView.swift */; };
+		DA35913528E7C977004F23D4 /* NavigiationOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35913428E7C977004F23D4 /* NavigiationOptionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		DA35911D28E79B83004F23D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA35911F28E79B83004F23D4 /* NavigationExplorer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NavigationExplorer.entitlements; sourceTree = "<group>"; };
 		DA35912128E79B83004F23D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA35912828E79B91004F23D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA35912A28E79BA2004F23D4 /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		DA35912C28E79F65004F23D4 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		DA35912E28E7B27D004F23D4 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		DA35913028E7B3B7004F23D4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DA35913228E7B862004F23D4 /* StoreExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreExampleView.swift; sourceTree = "<group>"; };
+		DA35913428E7C977004F23D4 /* NavigiationOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigiationOptionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 		DA35910D28E79B81004F23D4 = {
 			isa = PBXGroup;
 			children = (
+				DA35912828E79B91004F23D4 /* README.md */,
 				DA35911828E79B81004F23D4 /* NavigationExplorer */,
 				DA35911728E79B81004F23D4 /* Products */,
 			);
@@ -53,6 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				DA35911928E79B81004F23D4 /* NavigationExplorerApp.swift */,
+				DA35912A28E79BA2004F23D4 /* Fruit.swift */,
+				DA35913428E7C977004F23D4 /* NavigiationOptionsView.swift */,
+				DA35912E28E7B27D004F23D4 /* Vehicle.swift */,
+				DA35913028E7B3B7004F23D4 /* DetailView.swift */,
+				DA35912C28E79F65004F23D4 /* NavigationManager.swift */,
+				DA35913228E7B862004F23D4 /* StoreExampleView.swift */,
 				DA35911B28E79B81004F23D4 /* ContentView.swift */,
 				DA35911D28E79B83004F23D4 /* Assets.xcassets */,
 				DA35911F28E79B83004F23D4 /* NavigationExplorer.entitlements */,
@@ -127,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA35912928E79B91004F23D4 /* README.md in Resources */,
 				DA35912228E79B83004F23D4 /* Preview Assets.xcassets in Resources */,
 				DA35911E28E79B83004F23D4 /* Assets.xcassets in Resources */,
 			);
@@ -139,8 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA35912B28E79BA2004F23D4 /* Fruit.swift in Sources */,
+				DA35913128E7B3B7004F23D4 /* DetailView.swift in Sources */,
+				DA35912D28E79F65004F23D4 /* NavigationManager.swift in Sources */,
 				DA35911C28E79B81004F23D4 /* ContentView.swift in Sources */,
+				DA35913328E7B862004F23D4 /* StoreExampleView.swift in Sources */,
+				DA35912F28E7B27D004F23D4 /* Vehicle.swift in Sources */,
 				DA35911A28E79B81004F23D4 /* NavigationExplorerApp.swift in Sources */,
+				DA35913528E7C977004F23D4 /* NavigiationOptionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +313,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlynorama.NavigationExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +351,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.carlynorama.NavigationExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
