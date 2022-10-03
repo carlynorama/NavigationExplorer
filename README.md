@@ -16,3 +16,4 @@ How to move around an iOS app directly controlling the NavigationStack manually.
 
 - NavigationStack sees a view of the same Type at the same place as being of the same view identity, not refreshing @State variables unless the `.id(some Hashable)` modifier is assigned to the view. 
 - NavigationStack does in fact see `DisplayView<Fruit>` and `DisplayView<Vehicle>` as different views. 
+- 2022-Oct-3 NavigationStack has a very very sticky relationship to the app. The RootView and the NavigationStack do not appear to get fully cleaned up. ViewModels inited in that View do not appear to deinit, and will reinit.   

@@ -25,8 +25,16 @@ class NavigationManager: ObservableObject {
         }
     }
     
+    deinit {
+        print("NavigationManager DEINIT")
+    }
+    
+    init() {
+        print("NavigationManager INIT")
+    }
+    
     @Published var visibilityStack : [RouteItem] = []
-
+    
     func goToRoot() {
         visibilityStack.removeAll()
     }
@@ -56,5 +64,5 @@ class NavigationManager: ObservableObject {
         visibilityStack.append(.Fruit(Fruit.fruitList[1]))
     }
     
-
+    
 }
