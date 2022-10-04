@@ -11,8 +11,9 @@ import SwiftUI
 struct NavigationExplorerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //BooleanLanding()
             //RootView()
+            SplitViewLanding()
         }
     }
 }

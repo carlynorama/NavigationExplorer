@@ -18,8 +18,10 @@
 		DA35912F28E7B27D004F23D4 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35912E28E7B27D004F23D4 /* Vehicle.swift */; };
 		DA35913128E7B3B7004F23D4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35913028E7B3B7004F23D4 /* DetailView.swift */; };
 		DA35913528E7C977004F23D4 /* NavigiationOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35913428E7C977004F23D4 /* NavigiationOptionsView.swift */; };
-		DAAD2E6828EB7E6C004EDA2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD2E6728EB7E6C004EDA2C /* ContentView.swift */; };
+		DAAD2E6828EB7E6C004EDA2C /* BooleanLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD2E6728EB7E6C004EDA2C /* BooleanLanding.swift */; };
 		DAAD2E6A28EB810D004EDA2C /* SimpleRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD2E6928EB810D004EDA2C /* SimpleRootView.swift */; };
+		DAAD2E6E28EC908E004EDA2C /* SplitViewLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD2E6D28EC908E004EDA2C /* SplitViewLanding.swift */; };
+		DAAD2E7028EC952A004EDA2C /* RootForDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD2E6F28EC952A004EDA2C /* RootForDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +38,10 @@
 		DA35912E28E7B27D004F23D4 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		DA35913028E7B3B7004F23D4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DA35913428E7C977004F23D4 /* NavigiationOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigiationOptionsView.swift; sourceTree = "<group>"; };
-		DAAD2E6728EB7E6C004EDA2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DAAD2E6728EB7E6C004EDA2C /* BooleanLanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanLanding.swift; sourceTree = "<group>"; };
 		DAAD2E6928EB810D004EDA2C /* SimpleRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRootView.swift; sourceTree = "<group>"; };
+		DAAD2E6D28EC908E004EDA2C /* SplitViewLanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewLanding.swift; sourceTree = "<group>"; };
+		DAAD2E6F28EC952A004EDA2C /* RootForDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootForDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,15 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				DA35911928E79B81004F23D4 /* NavigationExplorerApp.swift */,
-				DA35912A28E79BA2004F23D4 /* Fruit.swift */,
-				DA35913428E7C977004F23D4 /* NavigiationOptionsView.swift */,
-				DA35912E28E7B27D004F23D4 /* Vehicle.swift */,
-				DA35913028E7B3B7004F23D4 /* DetailView.swift */,
-				DA35912C28E79F65004F23D4 /* NavigationManager.swift */,
-				DAAD2E6728EB7E6C004EDA2C /* ContentView.swift */,
-				DA35911B28E79B81004F23D4 /* RootView.swift */,
-				DAAD2E6928EB810D004EDA2C /* SimpleRootView.swift */,
-				DA2D639128E89F2B00BC9EF6 /* HelloThereView.swift */,
+				DAAD2E6B28EC8FC2004EDA2C /* ViewTypePersistanceTest */,
+				DAAD2E6C28EC9030004EDA2C /* MemoryLeakTests */,
 				DA35911D28E79B83004F23D4 /* Assets.xcassets */,
 				DA35911F28E79B83004F23D4 /* NavigationExplorer.entitlements */,
 				DA35912028E79B83004F23D4 /* Preview Content */,
@@ -94,6 +91,31 @@
 				DA35912128E79B83004F23D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAAD2E6B28EC8FC2004EDA2C /* ViewTypePersistanceTest */ = {
+			isa = PBXGroup;
+			children = (
+				DA2D639128E89F2B00BC9EF6 /* HelloThereView.swift */,
+				DA35911B28E79B81004F23D4 /* RootView.swift */,
+				DA35912A28E79BA2004F23D4 /* Fruit.swift */,
+				DA35913428E7C977004F23D4 /* NavigiationOptionsView.swift */,
+				DA35912E28E7B27D004F23D4 /* Vehicle.swift */,
+				DA35913028E7B3B7004F23D4 /* DetailView.swift */,
+				DA35912C28E79F65004F23D4 /* NavigationManager.swift */,
+			);
+			path = ViewTypePersistanceTest;
+			sourceTree = "<group>";
+		};
+		DAAD2E6C28EC9030004EDA2C /* MemoryLeakTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAAD2E6728EB7E6C004EDA2C /* BooleanLanding.swift */,
+				DAAD2E6D28EC908E004EDA2C /* SplitViewLanding.swift */,
+				DAAD2E6928EB810D004EDA2C /* SimpleRootView.swift */,
+				DAAD2E6F28EC952A004EDA2C /* RootForDetailView.swift */,
+			);
+			path = MemoryLeakTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,13 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAD2E7028EC952A004EDA2C /* RootForDetailView.swift in Sources */,
 				DA35912B28E79BA2004F23D4 /* Fruit.swift in Sources */,
 				DA35913128E7B3B7004F23D4 /* DetailView.swift in Sources */,
+				DAAD2E6E28EC908E004EDA2C /* SplitViewLanding.swift in Sources */,
 				DA35912D28E79F65004F23D4 /* NavigationManager.swift in Sources */,
 				DA35911C28E79B81004F23D4 /* RootView.swift in Sources */,
 				DAAD2E6A28EB810D004EDA2C /* SimpleRootView.swift in Sources */,
 				DA35912F28E7B27D004F23D4 /* Vehicle.swift in Sources */,
-				DAAD2E6828EB7E6C004EDA2C /* ContentView.swift in Sources */,
+				DAAD2E6828EB7E6C004EDA2C /* BooleanLanding.swift in Sources */,
 				DA35911A28E79B81004F23D4 /* NavigationExplorerApp.swift in Sources */,
 				DA2D639228E89F2B00BC9EF6 /* HelloThereView.swift in Sources */,
 				DA35913528E7C977004F23D4 /* NavigiationOptionsView.swift in Sources */,
