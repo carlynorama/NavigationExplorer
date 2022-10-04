@@ -8,6 +8,7 @@ How to move around an iOS app directly controlling the NavigationStack manually.
 - https://swiftwithmajid.com/2022/06/21/mastering-navigationstack-in-swiftui-deep-linking/
 - https://swiftui-lab.com/swiftui-id/
 - https://stackoverflow.com/a/73900602/5946596
+- https://developer.apple.com/documentation/swiftui/bringing_robust_navigation_structure_to_your_swiftui_app
 
 
 
