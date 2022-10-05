@@ -13,7 +13,8 @@ struct NavigationExplorerApp: App {
         WindowGroup {
             //BooleanLanding()
             //RootView()
-            SplitViewLanding()
+            //SplitViewLanding()
+            EnumSwapLandingView(coordinator: CoordinatorStore())
         }
     }
 }

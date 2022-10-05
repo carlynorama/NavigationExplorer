@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0F8FB828ECE1E300DF3366 /* EnumSwapLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F8FB728ECE1E300DF3366 /* EnumSwapLanding.swift */; };
 		DA2D639228E89F2B00BC9EF6 /* HelloThereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2D639128E89F2B00BC9EF6 /* HelloThereView.swift */; };
 		DA35911A28E79B81004F23D4 /* NavigationExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35911928E79B81004F23D4 /* NavigationExplorerApp.swift */; };
 		DA35911C28E79B81004F23D4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA35911B28E79B81004F23D4 /* RootView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA0F8FB728ECE1E300DF3366 /* EnumSwapLanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumSwapLanding.swift; sourceTree = "<group>"; };
 		DA2D639128E89F2B00BC9EF6 /* HelloThereView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloThereView.swift; sourceTree = "<group>"; };
 		DA35911628E79B81004F23D4 /* NavigationExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA35911928E79B81004F23D4 /* NavigationExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExplorerApp.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		DAAD2E6C28EC9030004EDA2C /* MemoryLeakTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA0F8FB728ECE1E300DF3366 /* EnumSwapLanding.swift */,
 				DAAD2E6728EB7E6C004EDA2C /* BooleanLanding.swift */,
 				DAAD2E6D28EC908E004EDA2C /* SplitViewLanding.swift */,
 				DAAD2E6928EB810D004EDA2C /* SimpleRootView.swift */,
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0F8FB828ECE1E300DF3366 /* EnumSwapLanding.swift in Sources */,
 				DAAD2E7028EC952A004EDA2C /* RootForDetailView.swift in Sources */,
 				DA35912B28E79BA2004F23D4 /* Fruit.swift in Sources */,
 				DA35913128E7B3B7004F23D4 /* DetailView.swift in Sources */,
