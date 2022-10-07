@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 
+//This way causes a memory leak. Use the SplashPage example for a better way. 
+
 enum PathItem: Hashable {
     case apples(AppleStore)
     case bananas(BananaStore)
