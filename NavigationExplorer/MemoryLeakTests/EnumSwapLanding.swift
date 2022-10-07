@@ -1,5 +1,5 @@
 //
-//  Stackoverflow3.swift
+//  EnumSwapLanding.swift
 //  NavigationExplorer
 //
 //  Created by Labtanza on 10/4/22.
@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 
-//This way causes a memory leak. Use the SplashPage example for a better way. 
+//This way causes a memory leak. Use the SplashPage example for a better way.
 
 enum PathItem: Hashable {
     case apples(AppleStore)

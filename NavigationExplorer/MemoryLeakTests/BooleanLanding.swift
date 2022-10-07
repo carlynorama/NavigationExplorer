@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//Do not use this. Causes memory leak as written.
+
 struct BooleanLanding: View {
     @State var showNavStack:Bool = false
     var body: some View {
