@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//NavigationStack in NavigationSplitView appears to be okay.
+
 //struct Option:Identifiable, Hashable {
 //    let value:String
 //    let id = UUID()
@@ -15,6 +17,7 @@ import SwiftUI
 //        self.value = value
 //    }
 //}
+
 
 struct SplitViewLanding: View {
     //var options = [Option("Alpha"), Option("Beta"), Option("Gamma"), Option("Delta"), Option("Epsilon")]
