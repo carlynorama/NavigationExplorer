@@ -14,7 +14,8 @@ struct NavigationExplorerApp: App {
             //BooleanLanding()
             //RootView()
             //SplitViewLanding()
-            EnumSwapLandingView(coordinator: CoordinatorStore())
+            //EnumSwapLandingView(coordinator: CoordinatorStore())
+            SplashPageNavView(navigation: SplashPathCoordinator())
         }
     }
 }
