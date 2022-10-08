@@ -26,6 +26,7 @@
 		DAF8A65628EFACEF00E093C0 /* SplashPage_OnePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65528EFACEF00E093C0 /* SplashPage_OnePath.swift */; };
 		DAF8A65B28F1CBF700E093C0 /* OptionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65A28F1CBF700E093C0 /* OptionViews.swift */; };
 		DAF8A65D28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65C28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift */; };
+		DAF8A65F28F2189300E093C0 /* SplashPage_TwoViewsTwoEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65E28F2189300E093C0 /* SplashPage_TwoViewsTwoEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		DAF8A65528EFACEF00E093C0 /* SplashPage_OnePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage_OnePath.swift; sourceTree = "<group>"; };
 		DAF8A65A28F1CBF700E093C0 /* OptionViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViews.swift; sourceTree = "<group>"; };
 		DAF8A65C28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage_PathPlusBool.swift; sourceTree = "<group>"; };
+		DAF8A65E28F2189300E093C0 /* SplashPage_TwoViewsTwoEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage_TwoViewsTwoEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				DAF8A65528EFACEF00E093C0 /* SplashPage_OnePath.swift */,
 				DAF8A65C28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift */,
+				DAF8A65E28F2189300E093C0 /* SplashPage_TwoViewsTwoEnum.swift */,
 				DAF8A65A28F1CBF700E093C0 /* OptionViews.swift */,
 			);
 			path = NavSplashPageAttempts;
@@ -212,6 +215,7 @@
 				DA0F8FB828ECE1E300DF3366 /* EnumSwapLanding.swift in Sources */,
 				DAAD2E7028EC952A004EDA2C /* RootForDetailView.swift in Sources */,
 				DA35912B28E79BA2004F23D4 /* Fruit.swift in Sources */,
+				DAF8A65F28F2189300E093C0 /* SplashPage_TwoViewsTwoEnum.swift in Sources */,
 				DA35913128E7B3B7004F23D4 /* DetailView.swift in Sources */,
 				DAAD2E6E28EC908E004EDA2C /* SplitViewLanding.swift in Sources */,
 				DA35912D28E79F65004F23D4 /* NavigationManager.swift in Sources */,

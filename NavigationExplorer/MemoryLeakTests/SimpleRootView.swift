@@ -33,6 +33,7 @@ struct SimpleRootView: View {
             }.navigationDestination(for: Int.self) { int in
                 DetailIntView(int: int, path: $path)
             }.navigationTitle("\(int)")
+                .id("TheRoot")
         }
     }
 }

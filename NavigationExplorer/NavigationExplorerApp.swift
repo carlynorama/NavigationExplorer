@@ -15,13 +15,14 @@ struct NavigationExplorerApp: App {
             //RootView()
             
             //Memory Leaks?
-            BooleanLanding()  //Leaks
+            //BooleanLanding()  //Leaks
             //SplitViewLanding()  //Doesn't appear to leak
             //EnumSwapLandingView(coordinator: CoordinatorStore())  //Leaks
             
             //How to make a splash page / first time user path for real then? 
-            //SplashPathView(navigation: SplashPathCoordinator())
-            //SplashBoolView(navigation: SplashBoolCoordinator())
+            //SplashPathView(navigation: SplashPathCoordinator())  //meh. works alright but mushes concerns together
+            //SplashBoolView(navigation: SplashBoolCoordinator())  //bad
+            SplashTVTEView()  //Uses two enums and two views but 1 manager class. so far the favorite. 
         }
     }
 }
