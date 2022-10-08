@@ -29,7 +29,6 @@ struct SplashTVTEView: View {
                 switch scene {
                 case .app:
                     SplashTvTeAppRootView().environmentObject(oneCoordinator)
-                    
                 default:
                     splash
                 }
@@ -56,6 +55,7 @@ struct SplashTVTEView: View {
 final class CoordinatorTvTe: ObservableObject {
     @Published var path = NavigationPath()
 
+    //init could load state - see deep linking examples. 
     
     func showA() {
         path.append(PathTvTeOptions.optionA(OptionAVM()))

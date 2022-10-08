@@ -12,8 +12,6 @@ How to move around an iOS app directly controlling the NavigationStack manually.
 - https://stackoverflow.com/questions/73941284/why-are-objects-still-in-memory-after-emptying-navigationstack-path/
 
 
-
-
 ## Misc Notes
 
 - NavigationStack sees a view of the same Type at the same place as being of the same view identity, not refreshing @State variables unless the `.id(some Hashable)` modifier is assigned to the view. 
