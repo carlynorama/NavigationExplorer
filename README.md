@@ -2,6 +2,23 @@
 
 How to move around an iOS app directly controlling the NavigationStack manually. 
 
+## Current Main Examples
+
+Each of these is listed in `NavigationExplorerApp` as a possible first page. 
+
+Exploring how view persistence / identity works:
+- `RootView()`
+            
+Memory Leak Concerns:
+- `BooleanLanding()`  Leaks
+- `SplitViewLanding()`  Doesn't appear to leak
+- `EnumSwapLandingView(coordinator: CoordinatorStore())`  Leaks
+            
+How to make a non-leaking splash page / first time user path:
+- `SplashPathView(navigation: SplashPathCoordinator())`  meh. works alright but mushes concerns together
+- `SplashBoolView(navigation: SplashBoolCoordinator())`  the .navDest(isPresented:) init seems flakey
+- `SplashTVTEView()`  Uses two enums and two views but 1 manager class. So far the favorite because it separates the path concerns. 
+
 
 ## Resources
 - https://www.pointfree.co/blog/posts/78-reverse-engineering-swiftui-s-navigationpath-codability
