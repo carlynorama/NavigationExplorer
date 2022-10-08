@@ -11,10 +11,15 @@ import SwiftUI
 struct NavigationExplorerApp: App {
     var body: some Scene {
         WindowGroup {
-            BooleanLanding()
+            //Exploring how view persistence / identity works
             //RootView()
-            //SplitViewLanding()
-            //EnumSwapLandingView(coordinator: CoordinatorStore())
+            
+            //Memory Leaks?
+            BooleanLanding()  //Leaks
+            //SplitViewLanding()  //Doesn't appear to leak
+            //EnumSwapLandingView(coordinator: CoordinatorStore())  //Leaks
+            
+            //How to make a splash page / first time user path for real then? 
             //SplashPathView(navigation: SplashPathCoordinator())
             //SplashBoolView(navigation: SplashBoolCoordinator())
         }
