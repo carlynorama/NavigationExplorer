@@ -1,24 +1,27 @@
 //
-//  SplashPage.swift
+//  SplashPage_PathPlusBool.swift
 //  NavigationExplorer
 //
-//  Created by Labtanza on 10/6/22.
+//  Created by Labtanza on 10/8/22.
 //
 
 import Foundation
 import SwiftUI
 
 
-enum SplashPathItems: Hashable {
-    case splash
+//WHY DOESN'T THIS WORK TO HAVE isSplash start as true?
+
+enum SplashBoolOptions: Hashable {
     case optionA(OptionAVM)
     case optionB(OptionBVM)
 }
 
 
-final class SplashPathCoordinator: ObservableObject {
-    @Published var path: [SplashPathItems] = [.splash]
-    //@Published var isSplash = false
+final class SplashBoolCoordinator: ObservableObject {
+    @Published var path: [SplashBoolOptions] = []
+    @Published var isSplash = true
+    
+    var isNew = true
     
     func showA() {
         path.append(.optionA(OptionAVM()))
@@ -30,20 +33,32 @@ final class SplashPathCoordinator: ObservableObject {
     
     func showSplash() {
         path = []
-        path.append(.splash)
-        //isSplash = true
+        isSplash = true
     }
     
+    func checkSplash() {
+        print("Checking")
+        if isNew {
+            print("was new")
+            showSplash()
+            isNew = false
+        } else {
+            showA()
+        }
+    }
+    
+    
     func showStack() {
-        //isSplash = false
+        isNew = false
+        isSplash = false
         path = []
+        print(isSplash, isNew)
     }
 }
 
 
-struct SplashPageNavView: View {
-    @ObservedObject var navigation:SplashPathCoordinator
-
+struct SplashBoolView: View {
+    @StateObject var navigation:SplashBoolCoordinator
     
     var body: some View {
         NavigationStack(path: $navigation.path) {
@@ -55,7 +70,8 @@ struct SplashPageNavView: View {
                     Text("Push A")
                 }
             }
-            .navigationDestination(for: SplashPathItems.self) { path in
+            .navigationDestination(isPresented: $navigation.isSplash, destination: { splash })
+            .navigationDestination(for: SplashBoolOptions.self) { path in
                 switch path {
                 case .optionA(let vm):
                     OptionAView(vm: vm)
@@ -71,11 +87,10 @@ struct SplashPageNavView: View {
                                 Text("Kick Back To Splash")
                             }
                         }
-                case .splash:
-                    splash
                 }
 
-            }//.navigationDestination(isPresented: $store.isInitial, destination: { initial })
+            }
+            
         }
     }
     
@@ -89,32 +104,3 @@ struct SplashPageNavView: View {
     }
 }
 
-
-struct OptionAView: View {
-    @ObservedObject var vm: OptionAVM
-    
-    var body: some View {
-        Text("Option A View")
-    }
-}
-
-final class OptionAVM: NSObject, ObservableObject {
-    deinit {
-        print("deinit: \(String(describing: self))")
-    }
-}
-
-
-struct OptionBView: View {
-    @ObservedObject var vm: OptionBVM
-    
-    var body: some View {
-        Text("Option B View")
-    }
-}
-
-final class OptionBVM: NSObject, ObservableObject {
-    deinit {
-        print("deinit: \(String(describing: self))")
-    }
-}

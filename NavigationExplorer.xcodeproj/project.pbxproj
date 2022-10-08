@@ -23,7 +23,9 @@
 		DAAD2E6A28EB810D004EDA2C /* SimpleRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD2E6928EB810D004EDA2C /* SimpleRootView.swift */; };
 		DAAD2E6E28EC908E004EDA2C /* SplitViewLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD2E6D28EC908E004EDA2C /* SplitViewLanding.swift */; };
 		DAAD2E7028EC952A004EDA2C /* RootForDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAD2E6F28EC952A004EDA2C /* RootForDetailView.swift */; };
-		DAF8A65628EFACEF00E093C0 /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65528EFACEF00E093C0 /* SplashPage.swift */; };
+		DAF8A65628EFACEF00E093C0 /* SplashPage_OnePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65528EFACEF00E093C0 /* SplashPage_OnePath.swift */; };
+		DAF8A65B28F1CBF700E093C0 /* OptionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65A28F1CBF700E093C0 /* OptionViews.swift */; };
+		DAF8A65D28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65C28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +47,9 @@
 		DAAD2E6928EB810D004EDA2C /* SimpleRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRootView.swift; sourceTree = "<group>"; };
 		DAAD2E6D28EC908E004EDA2C /* SplitViewLanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewLanding.swift; sourceTree = "<group>"; };
 		DAAD2E6F28EC952A004EDA2C /* RootForDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootForDetailView.swift; sourceTree = "<group>"; };
-		DAF8A65528EFACEF00E093C0 /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
+		DAF8A65528EFACEF00E093C0 /* SplashPage_OnePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage_OnePath.swift; sourceTree = "<group>"; };
+		DAF8A65A28F1CBF700E093C0 /* OptionViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViews.swift; sourceTree = "<group>"; };
+		DAF8A65C28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage_PathPlusBool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				DA35911928E79B81004F23D4 /* NavigationExplorerApp.swift */,
-				DAF8A65528EFACEF00E093C0 /* SplashPage.swift */,
+				DAF8A65928F1CBAF00E093C0 /* SplashPageAttempts */,
 				DAAD2E6B28EC8FC2004EDA2C /* ViewTypePersistanceTest */,
 				DAAD2E6C28EC9030004EDA2C /* MemoryLeakTests */,
 				DA35911D28E79B83004F23D4 /* Assets.xcassets */,
@@ -122,6 +126,16 @@
 				DAAD2E6F28EC952A004EDA2C /* RootForDetailView.swift */,
 			);
 			path = MemoryLeakTests;
+			sourceTree = "<group>";
+		};
+		DAF8A65928F1CBAF00E093C0 /* SplashPageAttempts */ = {
+			isa = PBXGroup;
+			children = (
+				DAF8A65528EFACEF00E093C0 /* SplashPage_OnePath.swift */,
+				DAF8A65C28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift */,
+				DAF8A65A28F1CBF700E093C0 /* OptionViews.swift */,
+			);
+			path = SplashPageAttempts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,10 +218,12 @@
 				DA35911C28E79B81004F23D4 /* RootView.swift in Sources */,
 				DAAD2E6A28EB810D004EDA2C /* SimpleRootView.swift in Sources */,
 				DA35912F28E7B27D004F23D4 /* Vehicle.swift in Sources */,
-				DAF8A65628EFACEF00E093C0 /* SplashPage.swift in Sources */,
+				DAF8A65628EFACEF00E093C0 /* SplashPage_OnePath.swift in Sources */,
 				DAAD2E6828EB7E6C004EDA2C /* BooleanLanding.swift in Sources */,
 				DA35911A28E79B81004F23D4 /* NavigationExplorerApp.swift in Sources */,
+				DAF8A65D28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift in Sources */,
 				DA2D639228E89F2B00BC9EF6 /* HelloThereView.swift in Sources */,
+				DAF8A65B28F1CBF700E093C0 /* OptionViews.swift in Sources */,
 				DA35913528E7C977004F23D4 /* NavigiationOptionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
