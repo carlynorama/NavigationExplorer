@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				DA35911928E79B81004F23D4 /* NavigationExplorerApp.swift */,
-				DAF8A65928F1CBAF00E093C0 /* SplashPageAttempts */,
+				DAF8A65928F1CBAF00E093C0 /* NavSplashPageAttempts */,
 				DAAD2E6B28EC8FC2004EDA2C /* ViewTypePersistanceTest */,
 				DAAD2E6C28EC9030004EDA2C /* MemoryLeakTests */,
 				DA35911D28E79B83004F23D4 /* Assets.xcassets */,
@@ -128,14 +128,14 @@
 			path = MemoryLeakTests;
 			sourceTree = "<group>";
 		};
-		DAF8A65928F1CBAF00E093C0 /* SplashPageAttempts */ = {
+		DAF8A65928F1CBAF00E093C0 /* NavSplashPageAttempts */ = {
 			isa = PBXGroup;
 			children = (
 				DAF8A65528EFACEF00E093C0 /* SplashPage_OnePath.swift */,
 				DAF8A65C28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift */,
 				DAF8A65A28F1CBF700E093C0 /* OptionViews.swift */,
 			);
-			path = SplashPageAttempts;
+			path = NavSplashPageAttempts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

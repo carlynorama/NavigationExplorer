@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 
-//WHY DOESN'T THIS WORK TO HAVE isSplash start as true?
+//WHY DOESN'T THIS WORK? isSplash can't start as true?
 
 enum SplashBoolOptions: Hashable {
     case optionA(OptionAVM)

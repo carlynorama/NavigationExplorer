@@ -11,12 +11,12 @@ import SwiftUI
 struct NavigationExplorerApp: App {
     var body: some Scene {
         WindowGroup {
-            //BooleanLanding()
+            BooleanLanding()
             //RootView()
             //SplitViewLanding()
             //EnumSwapLandingView(coordinator: CoordinatorStore())
             //SplashPathView(navigation: SplashPathCoordinator())
-            SplashBoolView(navigation: SplashBoolCoordinator())
+            //SplashBoolView(navigation: SplashBoolCoordinator())
         }
     }
 }
