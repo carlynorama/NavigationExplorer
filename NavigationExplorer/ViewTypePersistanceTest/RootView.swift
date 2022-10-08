@@ -46,6 +46,7 @@ struct RootView: View {
 //                        .environmentObject(nav)
                     
                 case .Vehicle(let vehicle):
+                    //shows the difference between .id and no .id behavior
                     DisplayView(item: vehicle).environmentObject(nav)
 //                    VehicleView(vehicle: vehicle).environmentObject(nav)
                 }
