@@ -27,6 +27,7 @@ How to make a non-leaking splash page / first time user path:
 - https://stackoverflow.com/a/73900602/5946596
 - https://developer.apple.com/documentation/swiftui/bringing_robust_navigation_structure_to_your_swiftui_app
 - https://stackoverflow.com/questions/73941284/why-are-objects-still-in-memory-after-emptying-navigationstack-path/
+- https://developer.apple.com/forums/thread/716804?answerId=731260022
 
 
 ## Misc Notes
