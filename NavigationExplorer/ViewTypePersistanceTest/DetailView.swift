@@ -41,3 +41,31 @@ struct DisplayView<Item:Displayable>: View {
 }
 
 
+
+struct DisplayView2<Item:Displayable>: View {
+    
+    @State private var counter = 0
+    @EnvironmentObject var navigation: NavigationManager
+    var item:Item
+    
+    
+    var body: some View {
+        
+        VStack {
+            Spacer()
+            Text("I AM A DISPLAY VIEW")
+            Text("Selected vehicle: " + item.id)
+            Text("How many updates: \(counter)")
+            
+            //NavigationOptionsView(counter: $counter).environmentObject(navigation)
+            
+            
+        }.onDisappear() {
+            print("Vehicle view \(item.id) is gone")
+        }.onAppear() {
+            print("Hi I'm \(item.id), I'm new here.")
+        }
+        
+    }
+}
+

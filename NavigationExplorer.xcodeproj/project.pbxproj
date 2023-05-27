@@ -27,6 +27,7 @@
 		DAF8A65B28F1CBF700E093C0 /* OptionViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65A28F1CBF700E093C0 /* OptionViews.swift */; };
 		DAF8A65D28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65C28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift */; };
 		DAF8A65F28F2189300E093C0 /* SplashPage_TwoViewsTwoEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A65E28F2189300E093C0 /* SplashPage_TwoViewsTwoEnum.swift */; };
+		DAF8A68628F5FF8800E093C0 /* RootViewTwoTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8A68528F5FF8800E093C0 /* RootViewTwoTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		DAF8A65A28F1CBF700E093C0 /* OptionViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViews.swift; sourceTree = "<group>"; };
 		DAF8A65C28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage_PathPlusBool.swift; sourceTree = "<group>"; };
 		DAF8A65E28F2189300E093C0 /* SplashPage_TwoViewsTwoEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage_TwoViewsTwoEnum.swift; sourceTree = "<group>"; };
+		DAF8A68528F5FF8800E093C0 /* RootViewTwoTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewTwoTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				DA2D639128E89F2B00BC9EF6 /* HelloThereView.swift */,
 				DA35911B28E79B81004F23D4 /* RootView.swift */,
+				DAF8A68528F5FF8800E093C0 /* RootViewTwoTypes.swift */,
 				DA35912A28E79BA2004F23D4 /* Fruit.swift */,
 				DA35913428E7C977004F23D4 /* NavigiationOptionsView.swift */,
 				DA35912E28E7B27D004F23D4 /* Vehicle.swift */,
@@ -227,6 +230,7 @@
 				DA35911A28E79B81004F23D4 /* NavigationExplorerApp.swift in Sources */,
 				DAF8A65D28F1CC3C00E093C0 /* SplashPage_PathPlusBool.swift in Sources */,
 				DA2D639228E89F2B00BC9EF6 /* HelloThereView.swift in Sources */,
+				DAF8A68628F5FF8800E093C0 /* RootViewTwoTypes.swift in Sources */,
 				DAF8A65B28F1CBF700E093C0 /* OptionViews.swift in Sources */,
 				DA35913528E7C977004F23D4 /* NavigiationOptionsView.swift in Sources */,
 			);

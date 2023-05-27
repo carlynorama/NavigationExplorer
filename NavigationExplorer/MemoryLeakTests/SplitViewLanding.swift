@@ -35,7 +35,7 @@ struct SplitViewLanding: View {
             }
         } detail: {
             if let selection {
-                RootForDetailView(for: selection)//.id(selection)
+                RootForDetailView(for: selection).id(selection)
             }
             
         }

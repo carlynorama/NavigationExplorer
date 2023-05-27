@@ -13,6 +13,7 @@ struct NavigationExplorerApp: App {
         WindowGroup {
             //Exploring how view persistence / identity works
             //RootView()
+            RootViewTwoTypes()
             
             //Memory Leaks?
             //BooleanLanding()  //Leaks
@@ -22,7 +23,7 @@ struct NavigationExplorerApp: App {
             //How to make a splash page / first time user path for real then? 
             //SplashPathView(navigation: SplashPathCoordinator())  //meh. works alright but mushes concerns together
             //SplashBoolView(navigation: SplashBoolCoordinator())  //bad
-            SplashTVTEView()  //Uses two enums and two views but 1 manager class. so far the favorite. 
+            //SplashTVTEView()  //Uses two enums and two views but 1 manager class. so far the favorite.
         }
     }
 }

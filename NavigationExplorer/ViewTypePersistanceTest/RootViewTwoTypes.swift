@@ -1,29 +1,27 @@
 //
-//  ContentView.swift
+//  RootViewTwoTypes.swift
 //  NavigationExplorer
 //
-//  Created by Labtanza on 9/30/22.
+//  Created by Labtanza on 10/11/22.
 //
 
-import Foundation
 import SwiftUI
 
 
-
-struct RootView: View {
-    @StateObject private var nav = NavigationManager()
+struct RootViewTwoTypes: View {
+    @StateObject private var nav = NavigationPathManager()
     
     @State private var helloNewItem = false
     
     var body: some View {
-        NavigationStack(path: $nav.visibilityStack) {
+        NavigationStack(path: $nav.path) {
             VStack {
                 Button("Jump to Strawberry through Banana", action: bananaAndStrawberry)
                     .padding(40)
                 Button("Push Hello") { helloNewItem.toggle() }
                     .padding(40)
                 List(Fruit.fruitList) {
-                    fruit in NavigationLink(value: NavigationManager.RouteItem.Fruit(fruit)) {
+                    fruit in NavigationLink(value: fruit) {
                         Text(fruit.id)
                     }
                 }
@@ -35,23 +33,19 @@ struct RootView: View {
             //            .navigationDestination(for: Fruit.self) {
             //                fruit in FruitView(fruit: fruit).environmentObject(fruitController)
             //            }
-            .navigationDestination(for: NavigationManager.RouteItem.self) { route in
+            .navigationDestination(for: Fruit.self) { fruit in
                 let a = print("Test Me")
-                switch route {
-                case .Fruit(let fruit):
-                    DisplayView(item: fruit)
+                    DisplayView2(item: fruit)
                         .environmentObject(nav)
                         .id(fruit)
-//                    FruitView(fruit: fruit)
-//                        .id(fruit)
-//                        .environmentObject(nav)
-                    
-                case .Vehicle(let vehicle):
-                    //shows the difference between .id and no .id behavior
-                    DisplayView(item: vehicle).environmentObject(nav)
-//                    VehicleView(vehicle: vehicle).environmentObject(nav)
-                }
-            }.navigationDestination(isPresented: $helloNewItem, destination: { HelloThereView().environmentObject(nav) })
+            }.navigationDestination(for: Vehicle.self) { vehicle in
+                let a = print("Test Me")
+                    DisplayView2(item: vehicle)
+                        .environmentObject(nav)
+                        .id(vehicle)
+            }
+            
+            .navigationDestination(isPresented: $helloNewItem, destination: { HelloThereView().environmentObject(nav) })
         }
     }
     
@@ -67,3 +61,9 @@ struct RootView: View {
 //        RootView()
 //    }
 //}
+
+struct RootViewTwoTypes_Previews: PreviewProvider {
+    static var previews: some View {
+        RootViewTwoTypes()
+    }
+}

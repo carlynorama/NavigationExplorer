@@ -29,6 +29,7 @@ struct SplashTVTEView: View {
                 switch scene {
                 case .app:
                     SplashTvTeAppRootView().environmentObject(oneCoordinator)
+                    let a = print("Three Times?")
                 default:
                     splash
                 }
@@ -86,11 +87,17 @@ final class CoordinatorTvTe: ObservableObject {
 struct SplashTvTeAppRootView: View {
     @EnvironmentObject var navigation: CoordinatorTvTe
 
+    init() {
+        print("SubView Init")
+    }
     
     var body: some View {
       
             VStack {
                 Text("Real Root")
+            }
+            .onAppear() {
+                print("Appear")
             }
             .navigationBarBackButtonHidden(true)
             .toolbar {
